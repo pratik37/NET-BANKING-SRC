@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-a-registration',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ARegistrationComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router : Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  nextPage1(){
+    console.log("in nextPage1");
+    this.router.navigate(['nextPage']);
+    
   }
 
 }

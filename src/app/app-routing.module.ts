@@ -4,11 +4,13 @@ import { CustomerHomeComponent } from './COMPONENT/Customer/customer-home/custom
 
 import { LoginComponent } from './COMPONENT/login/login.component';
 import { ARegistrationComponent } from './COMPONENT/Registration/a-registration/a-registration.component';
+import { BRegistrationComponent } from './COMPONENT/Registration/b-registration/b-registration.component';
 
 const routes: Routes = [
   {path:"login", component: LoginComponent},
   {path: "" , component: CustomerHomeComponent},
-  {path: "newRegistration", component: ARegistrationComponent}
+  {path: "newRegistration", component: ARegistrationComponent},
+  {path: "nextPage", component: BRegistrationComponent}
 ];
 
 @NgModule({
